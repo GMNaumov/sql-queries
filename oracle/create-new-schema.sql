@@ -6,6 +6,3 @@ CREATE USER reader IDENTIFIED by passw0rd;
 --Даём пользователю 'reader' базовые права на подключение к базе
 GRANT CREATE SESSION TO reader;
 
---Grant select permissions to specific table on different schema to the user 'reader'
---Даём пользователю 'reader' права на чтение конкретной таблицы из другой схемы БД
-GRANT SELECT ON hr.locations TO reader;
