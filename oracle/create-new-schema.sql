@@ -6,3 +6,10 @@ CREATE USER reader IDENTIFIED by passw0rd;
 --Даём пользователю 'reader' базовые права на подключение к базе
 GRANT CREATE SESSION TO reader;
 
+--Revoke login permissions from the 'reader' user
+--Убираем у пользователя 'reader' права на подключение к базе
+REVOKE CREATE SESSION FROM reader;
+
+--Revoke ALL permissions from the 'reader' user
+--Убираем у пользователя 'reader' все выданные ранее права
+REVOKE ALL PRIVILEGES FROM reader;
